@@ -1,0 +1,14 @@
+.links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.link {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}

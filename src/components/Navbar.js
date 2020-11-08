@@ -1,21 +1,21 @@
 import React from 'react'
+import PageLinks from '../constants/links'
+import { Link } from 'gatsby'
+import style from './Navbar.module.css'
 
-const Navbar = () => {
+export default function Navbar() {
     return (
-        <nav>
-            <ul>
-                <li>
-                    <Link to='/'>Home</Link>
-                </li>
-                <li>
-                    <Link to='/blog'>Blog</Link>
-                </li>
-                <li>
-                    <Link to='/projects'>Projects</Link>
-                </li>
+        <nav className={style.nav}>
+            <div>
+                <Link className={style.brand} to='/'>
+                    <span className={style.logo}>JC</span>
+                    <span className={style.name}>Jackson Chen</span>
+                </Link>
+                
+            </div>
+            <ul className={style.ul}>
+                <PageLinks />
             </ul>
         </nav>
     )
 }
-
-export default Navbar
