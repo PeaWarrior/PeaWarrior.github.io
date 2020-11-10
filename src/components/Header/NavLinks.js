@@ -8,10 +8,16 @@ const NavList = styled.ul`
 `
 
 const NavItem = styled(Link)`
-    padding: 0 20px;
+    margin: 0 20px;
+    color: #95A3B3;
+    letter-spacing: 0.75px;
     align-items: center;
-    letter-spacing: 0.2px;
     text-decoration: none;
+
+    &:hover {
+        color: #4B4E6D;
+        border-bottom: #84DCC6 1px solid;
+    }
 `
 
 const data = [
