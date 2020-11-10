@@ -1,6 +1,7 @@
 import React from "react"
 import { createGlobalStyle } from 'styled-components'
 import Layout from '../components/Layout'
+import Hero from '../components/Hero'
 
 export default function Home() {
   const Global = createGlobalStyle`
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <Layout>
       <Global />
-      Hello world!
+      <Hero />
     </Layout>
   )
 }

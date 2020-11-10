@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
-export const Header = styled.header`
+const NavBar = styled.header`
+    position: fixed;
     width: 100%;
     padding: 0 6.25%;
-    height: 3rem;
+    height: 4.25rem;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1d3557;
-    border: 1px solid black;
+    background: #fbfbfb;
 `
+
+export default NavBar

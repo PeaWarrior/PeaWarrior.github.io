@@ -5,7 +5,7 @@ const MenuButton = styled.button`
     align-items: center;
     justify-content: space-around;
     font-size: 20px;
-    color: #f1faee;
+    color: #201a23;
     background: transparent;
     border: none;
     cursor: pointer;
