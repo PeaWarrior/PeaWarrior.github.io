@@ -10,6 +10,7 @@ const NavBar = styled.header`
     align-items: center;
     justify-content: space-between;
     background: #fbfbfb;
+    z-index: 10;
 `
 
 export default NavBar

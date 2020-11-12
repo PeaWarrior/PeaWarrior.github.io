@@ -1,22 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../styles/theme';
+
+import Menu from '../components/Menu/Menu';
+
+
 import NavBar from './Header/NavBar'
 import Brand from './Header/Brand'
-import NavLinks from './Header/NavLinks'
 import MenuButton from './Header/MenuButton'
 
-import { AiOutlineMenuFold } from "react-icons/ai";
+import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 
 const Layout = ({ children }) => {
-    return (
-        <>
-        <NavBar>
-            <Brand to="/">JACKSON CHEN</Brand>
-            <MenuButton><AiOutlineMenuFold /></MenuButton>
-            {/* <NavLinks /> */}
-        </NavBar>
+    const [open, setOpen] = useState(false);
 
-        {children}
-        </>
+    const handleMenuClick = (event) => {
+        setOpen(!open);
+    }
+
+
+    return (
+        <ThemeProvider theme={theme}>
+            <NavBar>
+                <Brand to="/">JACKSON CHEN</Brand>
+                <MenuButton onClick={handleMenuClick}
+                >
+                    {open ? <AiOutlineMenuUnfold /> : <AiOutlineMenuFold />}
+                </MenuButton>
+            </NavBar>
+
+            <Menu open={open} />
+
+            {children}
+        </ThemeProvider>
     )
 }
 
