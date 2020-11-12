@@ -4,8 +4,8 @@ export const StyledMenu = styled.nav`
     height: 100vh;
     padding: 2rem;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 4.25rem;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,9 +14,10 @@ export const StyledMenu = styled.nav`
     transition: transform 0.3s ease-in-out;
     list-style-type: none;
     z-index: 5;
+    transform: ${({ open }) => open ? 'translateX(0)': 'translateX(100%)'};
+    width: 100%;
     
     @media (max-width: ${({ theme }) => theme.mobile}) {
-        width: 100%;
         transform: ${({ open }) => open ? 'translateX(0)': 'translateX(100%)'};
     }
 
