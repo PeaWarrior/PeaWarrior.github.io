@@ -1,27 +1,27 @@
 export const Links = [
     {
-        id: 1,
-        text: 'Home',
-        url: '/'
-    },
-    {
         id: 2,
         text: 'About',
         url: '/about'
     },
     {
         id: 3,
+        text: 'Skills',
+        url: '/skills'
+    },
+    {
+        id: 4,
         text: 'Projects',
         url: '/projects'
     },
     {
-        id: 4,
+        id: 5,
         text: 'Blog',
         url: '/blog'
     },
     {
-        id: 5,
+        id: 6,
         text: 'Contact',
         url: '/contact'
     },
-]
+];

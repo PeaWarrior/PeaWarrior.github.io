@@ -5,12 +5,12 @@ const MenuButton = styled.button`
     align-items: center;
     justify-content: space-around;
     font-size: 30px;
-    color: #4B4E6D;
+    color: ${({ theme }) => theme.primaryAccent};
     background: transparent;
     border: none;
     outline: none;
     cursor: pointer;
-    z-index: 5;
+    z-index: 10;
 `
 
 export default MenuButton

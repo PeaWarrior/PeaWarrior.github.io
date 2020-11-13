@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyledMenu } from './Menu.styled';
 import { Links } from '../../constants/Links';
 
-const Menu = ({open}) => {
-    // const [open, setOpen] = useState(false);
+const Menu = ({ openMenu, setOpenMenu }) => {
 
     const MenuItems = Links.map(link => {
         return (
@@ -14,7 +13,7 @@ const Menu = ({open}) => {
     })
 
     return (
-        <StyledMenu open={open}>
+        <StyledMenu openMenu={openMenu}>
             {MenuItems}
         </StyledMenu>
     )

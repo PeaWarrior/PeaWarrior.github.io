@@ -7,6 +7,7 @@ const Construction = styled.p`
     width: 100px;
     font-size: 18px;
     color: #4B4E6D;
+    z-index: 1;
 `
 
 export default Construction
