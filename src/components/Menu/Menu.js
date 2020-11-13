@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledMenu } from './Menu.styled';
 import { Links } from '../../constants/Links';
 
-const Menu = ({ openMenu, setOpenMenu }) => {
+const Menu = ({ openMenu, toggleMenu }) => {
 
     const MenuItems = Links.map(link => {
         return (
@@ -13,7 +13,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
     })
 
     return (
-        <StyledMenu openMenu={openMenu}>
+        <StyledMenu openMenu={openMenu} onClick={toggleMenu}>
             {MenuItems}
         </StyledMenu>
     )

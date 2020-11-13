@@ -30,7 +30,7 @@ const NavBar = () => {
                 <MenuButton onClick={toggleMenu}>
                     {openMenu ? <AiOutlineMenuUnfold /> : <AiOutlineMenuFold />}
                 </MenuButton>
-            <Menu openMenu={openMenu} />
+            <Menu openMenu={openMenu} toggleMenu={toggleMenu} />
         </StyledNavBar>
     )
 }
