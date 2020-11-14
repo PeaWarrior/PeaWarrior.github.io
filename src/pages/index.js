@@ -1,8 +1,7 @@
 import React from 'react';
-import { Layout, About } from '../components';
-import Hero from '../components/Hero';
-import Construction from '../components/Construction';
 import { GlobalStyles } from '../styles/Global';
+import { Layout, Hero, About } from '../components';
+import Construction from '../components/Construction';
 
 export default function Home() {
   return (
