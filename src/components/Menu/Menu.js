@@ -1,13 +1,15 @@
 import React from 'react';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
+
 import { StyledMenu } from './Menu.styled';
-import { Links } from '../../constants/Links';
+import { Links } from '../../constants';
 
 const Menu = ({ openMenu, toggleMenu }) => {
 
-    const MenuItems = Links.map(link => {
+    const MenuItems = Links.map(({ id, url, text }) => {
         return (
-            <li key={link.id}>
-                <a to={link.url}>{link.text}</a>
+            <li key={id}>
+                <AnchorLink to={url}>{text}</AnchorLink>
             </li>
         )
     })

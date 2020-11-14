@@ -9,7 +9,6 @@ export const StyledMenu = styled.nav`
     right: 0;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     text-align: left;
     background: ${({ theme }) => theme.primaryDark + 'E6'};
     transition: transform 0.3s ease-in-out;
