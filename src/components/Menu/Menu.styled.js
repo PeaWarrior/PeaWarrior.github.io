@@ -23,6 +23,7 @@ export const StyledMenu = styled.nav`
     li {
         padding: 0.5rem 0;
         text-align: center;
+        width: auto;
     }
 
     a {

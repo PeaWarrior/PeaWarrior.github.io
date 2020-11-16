@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import useOnClickMenu from '../../hooks';
 
 import { StyledMenu } from './Menu.styled';
 import { Links } from '../../constants';
 
-const Menu = ({ open }) => {
+const Menu = ({ open, toggleMenu }) => {
+    const menuNode = useRef();
+    useOnClickMenu(menuNode, toggleMenu);
 
     const MenuItems = Links.map(({ id, url, text }) => {
         return (
@@ -15,10 +18,10 @@ const Menu = ({ open }) => {
     })
 
     return (
-        <StyledMenu open={open}>
+        <StyledMenu ref={menuNode} open={open}>
             {MenuItems}
         </StyledMenu>
     )
 }
 
-export default Menu
+export default Menu;
