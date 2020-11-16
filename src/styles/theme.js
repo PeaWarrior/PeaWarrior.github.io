@@ -3,5 +3,5 @@ export const theme = {
     primaryLight: '#FFFFFF',
     primaryAccent: '#628395',
     secondaryAccent: '#84DCC6',
-    mobile: '576px',
+    mobile: '768px',
 }
