@@ -9,8 +9,8 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
+        padding: 0 6.25%;
         align-items: center;
-        /* background: #0D0C1D; */
         color: black;
         display: flex;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

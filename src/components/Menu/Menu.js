@@ -4,7 +4,7 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { StyledMenu } from './Menu.styled';
 import { Links } from '../../constants';
 
-const Menu = ({ openMenu, toggleMenu }) => {
+const Menu = ({ open }) => {
 
     const MenuItems = Links.map(({ id, url, text }) => {
         return (
@@ -15,7 +15,7 @@ const Menu = ({ openMenu, toggleMenu }) => {
     })
 
     return (
-        <StyledMenu openMenu={openMenu} onClick={toggleMenu}>
+        <StyledMenu open={open}>
             {MenuItems}
         </StyledMenu>
     )

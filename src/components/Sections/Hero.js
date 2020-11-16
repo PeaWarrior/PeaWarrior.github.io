@@ -1,41 +1,28 @@
-import React, { useEffect } from 'react';
-import { useTransitionControl } from '../../hooks';
+import React, { useState, useEffect } from 'react';
+import { delay } from '../../utilities';
 
-import { StyledHeroSection } from './Hero.styled';
+import StyledHeroSection from './Hero.styled';
 
 
 const Hero = () => {
-    const [state, enter, exit] = useTransitionControl();
-    
-    const defaultStyle = {
-        transition: 'opacity 1500ms ease-in-out',
-        opacity: 0,
-    };
-
-    const transitionStyles = {
-        entering: { opacity: 1},
-        entered: { opacity: 1},
-        exiting: { opacity: 0},
-        exited: { opacity: 0},
-    }
-    
-    const style = {
-        ...defaultStyle,
-        ...transitionStyles[state] ?? {},
-    }
+    const [state, setState] = useState(false);
 
     useEffect(() => {
-        enter();
-    }, [])
+        const timer = setTimeout(() => setState(true), 100);
+        return () => clearTimeout(timer);
+    }, []);
 
+    const first = <h3>Hi, my name is</h3>;
+    const second = <h1>Jackson Chen.</h1>;
+    const third = <p>I'm a full-stack web developer.</p>
 
-    const one = <h3>Hi, my name is</h3>;
-    const two = <h1>Jackson Chen.</h1>;
+    const items = [first, second, third];
 
+    const renderItems = items.map((item, index) => item)
 
     return (
-        <StyledHeroSection onClick={enter}>
-            <h3 style={style}>Hi, my name is</h3>
+        <StyledHeroSection animate={state}>
+            {renderItems}
         </StyledHeroSection>
     )
 }

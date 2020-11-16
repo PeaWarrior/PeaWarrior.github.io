@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { AiFillGithub, AiFillLinkedin, AiFillMediumSquare, AiFillTwitterCircle } from 'react-icons/ai';
-import { theme } from '../../styles/theme';
+// import { theme } from '../../styles/theme';
 
 const StyledFooter = styled.footer`
     padding: 0 6.25%;
