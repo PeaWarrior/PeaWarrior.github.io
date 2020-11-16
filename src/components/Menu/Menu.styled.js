@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledMenu = styled.nav`
+export const StyledMenu = styled.ul`
     display: flex;
     list-style-type: none;
     z-index: 5;
