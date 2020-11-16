@@ -3,13 +3,14 @@ import styled from 'styled-components'
 export const StyledMenu = styled.nav`
     height: 100vh;
     width: 100%;
-    padding: 4.25rem 2rem;
+    padding: 4.25rem 5rem;
     position: fixed;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     text-align: left;
+    justify-content: center;
     background: ${({ theme }) => theme.primaryDark + 'E6'};
     transition: transform 0.3s ease-in-out;
     list-style-type: none;
@@ -21,16 +22,15 @@ export const StyledMenu = styled.nav`
     }
 
     li {
-        padding: 0.5rem 0;
+        padding: 0.5rem;
         text-align: center;
-        width: auto;
     }
 
     a {
         font-size: 2rem;
         text-transform: uppercase;
         font-weight: bold;
-        letter-spacing: 0.25rem;
+        letter-spacing: 0.5rem;
         color: ${({ theme }) => theme.primaryAccent};
         text-decoration: none;
         transition: color 0.3s linear;
