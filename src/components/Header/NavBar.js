@@ -12,7 +12,7 @@ const NavBar = () => {
 
     return (
         <StyledNavBar>
-            <Brand to="/" open={open}> JACKSON CHEN </Brand>
+            <Brand to="/#hero" open={open}> JACKSON CHEN </Brand>
                 <MenuButton onClick={toggleMenu}>
                     {open ? <AiOutlineMenuUnfold /> : <AiOutlineMenuFold />}
                 </MenuButton>

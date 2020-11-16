@@ -1,8 +1,11 @@
 import React from 'react';
+import StyledSkillsSection from './Skills.styled';
 
 const Skills = () => {
     return (
-        <div>SKILLS SECTION</div>
+        <StyledSkillsSection id="skills">
+            SKILLS SECTION
+        </StyledSkillsSection>
     )
 };
 

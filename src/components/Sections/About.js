@@ -1,7 +1,5 @@
 import React from 'react';
-// import { useStaticQuery, graphql } from 'gatsby';
-
-import { StyledAboutSection } from './About.styled'
+import StyledAboutSection from './About.styled'
 
 const About = () => {
 

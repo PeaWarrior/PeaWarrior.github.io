@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { Link } from 'gatsby'
+import styled from 'styled-components';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
-const Brand = styled(Link)`
+const Brand = styled(AnchorLink)`
     padding: 10px;
     color: ${({ theme, open }) => open ? theme.secondaryAccent : theme.primaryAccent};
     font-size: 18px;

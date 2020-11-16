@@ -24,7 +24,7 @@ const Hero = () => {
     ))
 
     return (
-        <StyledHeroSection animate={state}>
+        <StyledHeroSection animate={state} id="hero">
             {renderItems}
         </StyledHeroSection>
     )

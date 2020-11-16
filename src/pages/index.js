@@ -1,6 +1,6 @@
 import React from 'react';
 import { GlobalStyles } from '../styles/Global';
-import { Layout, Hero, About } from '../components';
+import { Layout, Hero, About, Skills, Projects, Blog, Contact } from '../components';
 
 export default function Home() {
   return (
@@ -8,6 +8,10 @@ export default function Home() {
       <GlobalStyles />
       <Hero />
       <About />
+      <Skills />
+      <Projects />
+      <Blog />
+      <Contact />
     </Layout>
   )
 }
