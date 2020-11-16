@@ -6,15 +6,18 @@ const StyledHeroSection = styled.section`
     background: ${({theme}) => theme.primaryLight};
 
     h1 {
+        padding: 2rem 0;
         margin: 0;
         font-size: 40px;
-        font-weight: 700;
+        font-weight: 600;
+        color: ${({ theme }) => theme.secondaryAccent};
         opacity: ${({ animate }) => animate ? '1' : '0'};
         transform: translateX(${({ animate }) => animate ? '0' : '-100%'});
         transition: ${'transform 1.5s, opacity 2s ease-in-out'};
     }
     
     h3 {
+        padding-top: 2rem;
         margin: 0;
         font-size: 16px;
         opacity: ${({ animate }) => animate ? '1' : '0'};
