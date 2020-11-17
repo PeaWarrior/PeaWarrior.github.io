@@ -4,8 +4,8 @@ import StyledNavBar from './NavBar.styled';
 import Brand from './Brand';
 import MenuButton from './MenuButton';
 import Menu from '../Menu/Menu';
-import { Links } from '../../constants';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
+// import { Links } from '../../constants';
+// import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 
@@ -13,13 +13,13 @@ const NavBar = () => {
     const [open, setOpen] = useState(false);
     const toggleMenu = () => setOpen(!open);
     
-    const MenuItems = Links.map(({ id, url, text }) => {
-        return (
-            <li key={id}>
-                <AnchorLink to={url}>{text}</AnchorLink>
-            </li>
-        )
-    })
+    // const MenuItems = Links.map(({ id, url, text }) => {
+    //     return (
+    //         <li key={id}>
+    //             <AnchorLink to={url}>{text}</AnchorLink>
+    //         </li>
+    //     )
+    // })
 
     return (
         <StyledNavBar>

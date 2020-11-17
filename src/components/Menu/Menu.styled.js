@@ -6,11 +6,12 @@ export const StyledMenu = styled.ul`
     z-index: 5;
     
     @media (max-width: ${({ theme }) => theme.mobile}) {
+        margin: 0;
+        padding: 4.25rem 5rem;
         height: 100vh;
         width: 100%;
-        padding: 4.25rem 5rem;
-        position: fixed;
         top: 0;
+        position: fixed;
         right: -100%;
         flex-direction: column;
         text-align: left;
