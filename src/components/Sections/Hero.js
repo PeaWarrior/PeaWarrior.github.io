@@ -12,7 +12,7 @@ const Hero = () => {
     }, []);
 
     const first = <h3>Hi, my name is</h3>;
-    const second = <h1>Jackson.</h1>;
+    const second = <h1>Jackson Chen.</h1>;
     const third = <p>I'm a full-stack web developer.</p>
 
     const items = [first, second, third];

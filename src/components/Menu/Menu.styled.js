@@ -22,17 +22,18 @@ export const StyledMenu = styled.ul`
     }
 
     
+    
     li {
         padding: 0.5rem;
         text-align: center;
-
+        
         @media (max-width: ${({ theme }) => theme.mobile}) {
             padding: 0.5rem;
         }
     }
     
     a {
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem, 1.75vw, 1.50rem);
         text-transform: uppercase;
         font-weight: bold;
         color: ${({ theme }) => theme.primaryAccent};
@@ -40,14 +41,6 @@ export const StyledMenu = styled.ul`
         transition: color 0.3s linear;
         cursor: pointer;
         
-        @media (max-width: ${({ theme }) => theme.mobile}) {
-            letter-spacing: 0.5rem;
-        }
-        
-        @media (min-width: ${({ theme }) => theme.mobile}) {
-            /* letter-spacing: 1px; */
-        }
-
         &:hover {
             color: ${({ theme }) => theme.secondaryAccent};
         }
