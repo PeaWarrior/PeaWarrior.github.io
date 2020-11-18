@@ -8,6 +8,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 const Hero = () => {
     const [state, setState] = useState(false);
+    
     const data = useStaticQuery(graphql`
     query {
       file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "hero.jpg" }) {
