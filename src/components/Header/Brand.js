@@ -7,10 +7,16 @@ const Brand = styled(AnchorLink)`
     font-size: clamp(1.2rem, 1.5vw, 1.75rem);
     font-weight: 800;
     text-decoration: none;
-    border-left: ${({ theme, open }) => open ? theme.primaryAccent : theme.secondaryAccent} 2px solid;
-    border-bottom: ${({ theme, open }) => open ? theme.primaryAccent : theme.secondaryAccent} 2px solid;
+    background: transparent;
+    border: ${({ theme, open }) => open ? theme.secondaryAccent : theme.primaryAccent} 2px solid;
     z-index: 10;
-    transition: color 0.4s ease-in-out, border-left 0.4s ease-in-out, border-bottom 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+    &:hover {
+        color: ${({ theme }) => theme.primaryLight};
+        border: ${({ theme }) => theme.secondaryDark} 2px solid;
+        background: ${({ theme }) => theme.secondaryDark};
+    }
 `
 
 export default Brand

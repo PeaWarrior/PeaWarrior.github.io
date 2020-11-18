@@ -13,7 +13,7 @@ const NavBar = () => {
     
     return (
         <StyledNavBar>
-            <Brand to="/#hero" open={open}> JACKSON CHEN </Brand>
+            <Brand to="/#hero" open={open}>JC</Brand>
             <MenuButton onClick={toggleMenu} aria-label='menu'>
                 {open ? <AiOutlineMenuUnfold /> : <AiOutlineMenuFold />}
             </MenuButton>

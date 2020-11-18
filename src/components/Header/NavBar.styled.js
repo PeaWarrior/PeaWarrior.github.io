@@ -10,6 +10,7 @@ const StyledNavBar = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: ${({theme}) => theme.primaryDark} 1px solid;
     background: ${({theme}) => theme.primaryLight};
     z-index: 5;
 `

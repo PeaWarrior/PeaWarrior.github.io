@@ -5,7 +5,7 @@ export const StyledMenu = styled.ul`
     list-style-type: none;
     z-index: 5;
     
-    @media (max-width: ${({ theme }) => theme.mobile}) {
+    @media (max-width: ${({ theme }) => theme.device.medium}) {
         margin: 0;
         padding: 4.25rem 5rem;
         height: 100vh;
@@ -26,23 +26,20 @@ export const StyledMenu = styled.ul`
     li {
         padding: 0.5rem;
         text-align: center;
-        
-        @media (max-width: ${({ theme }) => theme.mobile}) {
-            padding: 0.5rem;
-        }
     }
     
     a {
-        font-size: clamp(1.2rem, 1.75vw, 1.50rem);
+        font-size: clamp(1.1rem, 1.75vw, 1.4rem);
         text-transform: uppercase;
         font-weight: bold;
         color: ${({ theme }) => theme.primaryAccent};
         text-decoration: none;
-        transition: color 0.3s linear;
+        transition: ${'color 0.3s linear'};
         cursor: pointer;
         
         &:hover {
             color: ${({ theme }) => theme.secondaryAccent};
+            /* border-bottom: ${({ theme }) => theme.secondaryAccent} 1.5px solid; */
         }
     }
 

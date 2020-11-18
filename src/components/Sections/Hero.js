@@ -1,10 +1,24 @@
 import React, { useState, useEffect } from 'react';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import StyledHeroSection from './Hero.styled';
+import { StyledImage } from './Hero.styled';
 
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Hero = () => {
     const [state, setState] = useState(false);
+    const data = useStaticQuery(graphql`
+    query {
+      file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "hero.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
 
     useEffect(() => {
         const timer = setTimeout(() => setState(true), 100);
@@ -13,9 +27,11 @@ const Hero = () => {
 
     const first = <h3>Hi, my name is</h3>;
     const second = <h1>Jackson Chen.</h1>;
-    const third = <p>I'm a full-stack web developer.</p>
+    const third = <h2>Just your friendly neighborhood programmer.</h2>;
+    const fourth = <p>I'm a software engineer based in New York.</p>;
+    const fifth = <AnchorLink to="/#contact">Connect With Me</AnchorLink>
 
-    const items = [first, second, third];
+    const items = [first, second, third, fourth, fifth];
 
     const renderItems = items.map((item, index) => (
         <div key={index}>
@@ -24,9 +40,12 @@ const Hero = () => {
     ))
 
     return (
-        <StyledHeroSection animate={state} id="hero">
-            {renderItems}
-        </StyledHeroSection>
+        <>
+            <StyledImage fluid={data.file.childImageSharp.fluid}/>
+            <StyledHeroSection animate={state} id="hero">
+                {renderItems}
+            </StyledHeroSection>
+        </>
     )
 }
 
