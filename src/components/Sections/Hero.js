@@ -8,7 +8,7 @@ import { StyledImage } from "./Hero.styled"
 const Hero = () => {
   const [state, setState] = useState(false)
 
-  const data = useStaticQuery(graphql`
+  const heroImage = useStaticQuery(graphql`
     query {
       file(
         sourceInstanceName: { eq: "images" }
@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <>
-      <StyledImage fluid={data.file.childImageSharp.fluid} />
+      <StyledImage fluid={heroImage.file.childImageSharp.fluid} />
       <StyledHeroSection animate={state} id="hero">
         {renderItems}
       </StyledHeroSection>

@@ -27,5 +27,36 @@ export const GlobalStyles = createGlobalStyle`
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        h4 {
+            margin: 2.5rem 0;
+            width: 100%;
+            color: ${({ theme }) => theme.primaryAccent};
+            font-size: 3rem;
+            text-align: center;
+            overflow: hidden;
+
+            &:before {
+                content:"";
+                display: inline-block;
+                height: 0.5em;
+                vertical-align: bottom;
+                width: 100%;
+                margin-right: 5px;
+                margin-left: -100%;
+                border-top: 1px solid black;
+            }
+
+            &:after {
+                content:"";
+                display: inline-block;
+                height: 0.5em;
+                vertical-align: bottom;
+                width: 100%;
+                margin-right: -100%;
+                margin-left: 5px;
+                border-top: 1px solid black;
+            }
+        }
     }
 `
