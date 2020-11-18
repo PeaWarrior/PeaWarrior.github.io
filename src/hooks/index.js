@@ -1,1 +1,1 @@
-export { useOnClickMenu as default } from './useOnClickMenu';
+export { useOnClickMenu as default } from "./useOnClickMenu"

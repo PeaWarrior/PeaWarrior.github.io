@@ -1,13 +1,9 @@
-import React from 'react';
+import React from "react"
 
-import StyledBlogSection from './Blog.styled';
+import StyledBlogSection from "./Blog.styled"
 
 const Blog = () => {
-    return (
-        <StyledBlogSection id="blog">
-            Blog SECTION
-        </StyledBlogSection>
-    )
-};
+  return <StyledBlogSection id="blog">Blog SECTION</StyledBlogSection>
+}
 
-export default Blog;
+export default Blog

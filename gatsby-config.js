@@ -3,12 +3,13 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-const path = require(`path`);
+const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
     title: "Jackson Chen",
-    description: "Jackson Chen is a software engineer specialized in building full stack web applications.",
+    description:
+      "Jackson Chen is a software engineer specialized in building full stack web applications.",
     url: "https://jacksonchen.dev", // No trailing slash allowed!
     image: "/me.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@jacksonchen171",

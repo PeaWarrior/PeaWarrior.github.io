@@ -1,6 +1,14 @@
-import React from 'react';
-import { GlobalStyles } from '../styles/Global';
-import { Layout, Hero, About, Skills, Projects, Blog, Contact } from '../components';
+import React from "react"
+import { GlobalStyles } from "../styles/Global"
+import {
+  Layout,
+  Hero,
+  About,
+  Skills,
+  Projects,
+  Blog,
+  Contact,
+} from "../components"
 
 export default function Home() {
   return (
