@@ -16,8 +16,6 @@ const StyledHeroSection = styled.section`
     background: linear-gradient(0deg, ${({ theme }) => theme.primaryDark}99, ${({ theme }) => theme.primaryDark}99);
     width: 100vw;
     
-    /* background-size: 100vw 100vh; */
-
     h1 {
         margin: 0.5rem 0 0 0;
         font-size: clamp(2.8rem, 10vw, 5rem);

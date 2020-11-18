@@ -39,7 +39,6 @@ export const StyledMenu = styled.ul`
         
         &:hover {
             color: ${({ theme }) => theme.secondaryAccent};
-            /* border-bottom: ${({ theme }) => theme.secondaryAccent} 1.5px solid; */
         }
     }
 

@@ -13,9 +13,7 @@ const Brand = styled(AnchorLink)`
     transition: background 0.4s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 
     &:hover {
-        color: ${({ theme }) => theme.primaryLight};
-        border: ${({ theme }) => theme.secondaryDark} 2px solid;
-        background: ${({ theme }) => theme.secondaryDark};
+        background: ${({ theme }) => theme.secondaryAccent}66;
     }
 `
 
