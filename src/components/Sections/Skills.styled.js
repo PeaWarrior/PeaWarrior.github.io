@@ -15,7 +15,7 @@ const StyledSkillsSection = styled.section`
     h3 {
       font-size: 1.5rem;
       color: ${({ theme }) => theme.primaryDark };
-      border-bottom: 1px solid ${({ theme }) => theme.primaryDark };
+      /* border-bottom: 1px solid ${({ theme }) => theme.primaryDark }; */
     }
     
     div {

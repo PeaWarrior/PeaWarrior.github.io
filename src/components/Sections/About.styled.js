@@ -25,6 +25,10 @@ export const StyledAboutSection = styled.section`
     }
   }
 
+  a {
+    color: ${({ theme }) => theme.primaryAccent }
+  }
+
   p {
     padding: 0 6.25%;
     margin: 0 0 1rem 0;
