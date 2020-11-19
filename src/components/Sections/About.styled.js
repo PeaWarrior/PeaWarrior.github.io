@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import Img from 'gatsby-image';
+import styled from "styled-components"
+import Img from "gatsby-image"
 
 export const StyledImage = styled(Img)`
   margin: 0 1.5rem 1.5rem 1.5rem;
   max-width: 300px;
-`;
+`
 
 export const StyledAboutSection = styled.section`
   div {
@@ -23,7 +23,6 @@ export const StyledAboutSection = styled.section`
         width: 50%;
       }
     }
-
   }
 
   p {
@@ -33,5 +32,4 @@ export const StyledAboutSection = styled.section`
     font-weight: 300;
     line-height: 1.75rem;
   }
-
-`;
+`
