@@ -13,13 +13,14 @@ const StyledSkillsSection = styled.section`
     justify-content: space-evenly;
 
     h3 {
+      margin-top: 0;
       font-size: 1.5rem;
       color: ${({ theme }) => theme.primaryDark };
-      /* border-bottom: 1px solid ${({ theme }) => theme.primaryDark }; */
+      border-bottom: 1px solid ${({ theme }) => theme.primaryDark };
     }
     
     div {
-      width: 250px;
+      width: 170px;
       align-items: center;
       flex-direction: column;
       justify-content: flex-start;
@@ -30,7 +31,7 @@ const StyledSkillsSection = styled.section`
 
       p {
         margin: 0.25rem 0 2rem 0;
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: ${({ theme }) => theme.primaryDark };
       }
     }
