@@ -8,11 +8,12 @@ export const StyledImage = styled(Img)`
 `
 
 const StyledHeroSection = styled.section`
+  min-height: 100vh;
+  padding: 0 6.25%;
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 100vh;
-  padding: 0 6.25%;
+  align-items: normal;
   background: linear-gradient(
     0deg,
     ${({ theme }) => theme.primaryDark}99,
@@ -31,8 +32,10 @@ const StyledHeroSection = styled.section`
   }
 
   h2 {
+    max-width: 650px;
     margin: 1rem 0;
-    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-size: clamp(2rem, 3vw, 3rem);
+    letter-spacing: 1px;
     color: ${({ theme }) => theme.primaryAccent};
     opacity: ${({ animate }) => (animate ? "1" : "0")};
     transform: translateY(${({ animate }) => (animate ? "0" : "100%")});
@@ -48,8 +51,13 @@ const StyledHeroSection = styled.section`
   }
 
   p {
-    margin-bottom: 5rem;
-    font-size: clamp(1rem, 3vw, 1.75rem);
+    min-width: 300px;
+    max-width: 450px;
+    margin-bottom: 3.5rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 2rem;
     color: ${({ theme }) => theme.secondaryDark};
     opacity: ${({ animate }) => (animate ? "1" : "0")};
     transition: ${"opacity 2s ease-in-out"};

@@ -28,6 +28,11 @@ export const GlobalStyles = createGlobalStyle`
         flex-direction: column;
         justify-content: center;
 
+        min-height: 100vh;
+        padding: 4.25rem 6.25%;
+        display: flex;
+        align-items: center;
+
         h4 {
             margin: 2.5rem 0;
             width: 100%;

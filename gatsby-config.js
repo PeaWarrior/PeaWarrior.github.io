@@ -9,9 +9,9 @@ module.exports = {
   siteMetadata: {
     title: "Jackson Chen",
     description:
-      "Jackson Chen is a software engineer specialized in building full stack web applications.",
+      "Jackson Chen is your friendly neighborhood software engineer based in Brooklyn, NY specialized in building full stack web applications and solving problems through technology.",
     url: "https://jacksonchen.dev", // No trailing slash allowed!
-    image: "/me.png", // Path to your image you placed in the 'static' folder
+    image: "/landing.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@jacksonchen171",
   },
   plugins: [

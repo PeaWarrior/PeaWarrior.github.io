@@ -27,7 +27,7 @@ export const StyledMenu = styled.ul`
   }
 
   a {
-    font-size: clamp(1.1rem, 1.75vw, 1.4rem);
+    font-size: clamp(1.2rem, 1.75vw, 1.4rem);
     text-transform: uppercase;
     font-weight: bold;
     color: ${({ theme }) => theme.primaryAccent};

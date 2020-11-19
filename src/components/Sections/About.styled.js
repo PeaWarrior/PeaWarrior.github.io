@@ -3,14 +3,10 @@ import Img from 'gatsby-image';
 
 export const StyledImage = styled(Img)`
   margin: 0 1.5rem 1.5rem 1.5rem;
+  max-width: 300px;
 `;
 
 export const StyledAboutSection = styled.section`
-  min-height: 100vh;
-  padding: 4.25rem 6.25%;
-  display: flex;
-  align-items: center;
-  
   div {
     width: 100%;
     height: auto;
