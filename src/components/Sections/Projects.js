@@ -1,6 +1,5 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from 'gatsby-image';
 
 import StyledProjectsSection from "./Projects.styled";
 import ProjectCard from '../ProjectCard/ProjectCard';
@@ -34,7 +33,7 @@ const Projects = () => {
   }
 `);
 
-  const renderProjects = projects.map((project) => <ProjectCard key={project.node.frontmatter.title} {...project.node} />)
+  const renderProjects = projects.map((project, index) => <ProjectCard key={project.node.frontmatter.title} {...project.node} />)
 
   return (
     <StyledProjectsSection id="projects">

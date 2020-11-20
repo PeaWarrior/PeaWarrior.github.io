@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import StyledBlogCard from './BlogCard.styled';
 
 const BlogCard = ({ name, title, createdAt, excerpt, uniqueSlug, tags }) => {
   const blogSite = 'https://medium.com/@jacksonchen171/';
 
-  const renderTags = tags.map(tag => {
+  const renderTags = tags.map((tag, index) => {
     return (
-      <li>{tag.name}</li>
+      <li key={index}>{tag.name}</li>
     )
   })
 
@@ -22,7 +21,7 @@ const BlogCard = ({ name, title, createdAt, excerpt, uniqueSlug, tags }) => {
         </div>
       </div>
       <p>{excerpt}</p>
-      <Link to={blogSite + uniqueSlug}>Continue reading...</Link>
+      <a href={blogSite + uniqueSlug}>Continue reading...</a>
       <ul>
         <span>Tags:</span>
         {renderTags}
