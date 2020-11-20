@@ -2,6 +2,7 @@
 title: "PokéBattle"
 date: "2020-09-05"
 github: "https://github.com/PeaWarrior/PokeBattle-frontend"
+demo: 'https://www.youtube.com/watch?v=YokySyaxgpc'
 tech: 
   - React
   - Rails

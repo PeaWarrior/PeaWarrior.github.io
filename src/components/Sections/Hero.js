@@ -28,20 +28,20 @@ const Hero = () => {
     return () => clearTimeout(timer)
   }, [])
 
-  const first = <h3>Hi, my name is</h3>
-  const second = <h1>Jackson Chen.</h1>
-  const third = <h2>Just your friendly neighborhood programmer.</h2>
+  const first = <h3>Hi, my name is</h3>;
+  const second = <h1>Jackson Chen.</h1>;
+  const third = <h2>Just your friendly neighborhood programmer.</h2>;
   const fourth = (
     <p>
       I'm a software engineer based in Brooklyn, NY specialized in building full
       stack web applications and solving problems through technology.
     </p>
-  )
-  const fifth = <AnchorLink to="/#contact">Connect With Me</AnchorLink>
+  );
+  const fifth = <AnchorLink to="/#contact">Connect With Me</AnchorLink>;
 
-  const items = [first, second, third, fourth, fifth]
+  const items = [first, second, third, fourth, fifth];
 
-  const renderItems = items.map((item, index) => <div key={index}>{item}</div>)
+  const renderItems = items.map((item, index) => <div key={index}>{item}</div>);
 
   return (
     <>

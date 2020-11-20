@@ -2,12 +2,12 @@
 title: 'Money Box'
 date: '2020-09-16'
 github: 'https://github.com/PeaWarrior/MoneyBox-front'
+demo: 'https://www.youtube.com/watch?v=mr8TnVePpUI'
 tech: 
   - React
   - Redux
   - Chart.js
   - Websockets
-  - "APIs: Finnhub, IEX, TD Ameritrade"
 cover: './cover.png'
 ---
 

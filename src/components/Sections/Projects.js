@@ -17,10 +17,11 @@ const Projects = () => {
             title
             tech
             github
+            demo
             live
             cover {
               childImageSharp {
-                fixed(width: 300, height: 300) {
+                fixed(width: 300) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -33,21 +34,11 @@ const Projects = () => {
   }
 `);
 
-  const renderProjects = projects.map((project) => {
-    const { node: { frontmatter: { title, date, github, tech, apis, tools, cover }, excerpt } } = project;
-
-    return (
-      <ProjectCard key={title} {...project.node} />
-      // <div className='card' key={title}>
-      //   <h5>{title}</h5>
-      //   <p>{excerpt}</p>
-      // </div>
-    )
-  })
+  const renderProjects = projects.map((project) => <ProjectCard key={project.node.frontmatter.title} {...project.node} />)
 
   return (
-    <StyledProjectsSection id="portfolio">
-      <h4>PORTFOLIO</h4>
+    <StyledProjectsSection id="projects">
+      <h4>PROJECTS</h4>
       <div>
         {renderProjects}
       </div>
