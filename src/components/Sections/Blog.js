@@ -2,21 +2,29 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import StyledBlogSection from './Blog.styled';
+import BlogCard from '../BlogCard/BlogCard';
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
     {
-      allMediumPost {
+      allMediumPost(sort: {fields: createdAt, order: DESC}) {
         edges {
           node {
             author {
               name
             }
+            createdAt(formatString: "MMMM DD, YYYY")
             previewContent2 {
               bodyModel {
                 paragraphs {
                   text
                 }
+              }
+            }
+            uniqueSlug
+            virtuals {
+              tags {
+                name
               }
             }
           }
@@ -28,22 +36,23 @@ const Blog = () => {
   const { allMediumPost: {edges: blogs} } = data;
 
   const renderBlogs = blogs.map(blog => {
-    const { node: { author: { name }, previewContent2: { bodyModel: { paragraphs } } } } = blog;
+    const { node: { author: { name }, createdAt, previewContent2: { bodyModel: { paragraphs } }, uniqueSlug, virtuals: {tags} } } = blog;
 
 
     const title = paragraphs[0].text;
-    const subtitle = paragraphs[1].text;
     const excerpt = paragraphs[3].text;
+    const props = {name, title, createdAt, excerpt, uniqueSlug, tags};
     return (
-      <div></div>
+      <BlogCard key={title} {...props} />
     )
   });
-
-  console.log(renderBlogs);
 
   return (
   <StyledBlogSection id='blog'>
     <h4>BLOG</h4>
+    <div>
+      {renderBlogs}
+    </div>
   </StyledBlogSection>
   )
 }
