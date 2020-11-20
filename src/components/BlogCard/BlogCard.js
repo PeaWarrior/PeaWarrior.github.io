@@ -23,12 +23,10 @@ const BlogCard = ({ name, title, createdAt, excerpt, uniqueSlug, tags }) => {
       </div>
       <p>{excerpt}</p>
       <Link to={blogSite + uniqueSlug}>Continue reading...</Link>
-      <div className='blog-content'>
-        <ul>
-          <span>Tags:</span>
-          {renderTags}
-        </ul>
-      </div>
+      <ul>
+        <span>Tags:</span>
+        {renderTags}
+      </ul>
     </StyledBlogCard>
   )
 };

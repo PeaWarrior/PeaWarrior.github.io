@@ -49,7 +49,6 @@ const StyledBlogCard = styled.div`
     -webkit-box-orient: vertical;
   }
   a {
-    /* margin-bottom: 2rem; */
     width: 100%;
     text-align: end;
     color: ${({ theme }) => theme.primaryAccent};
@@ -58,28 +57,25 @@ const StyledBlogCard = styled.div`
       color: ${({ theme }) => theme.secondaryAccent};
     }
   }
-  .blog-content {
+
+  ul {
+    margin: 0;
+    padding: 0;
     height: max-content;
-    
-    ul {
-      margin: 0;
-      padding: 0;
-      height: max-content;
-      display: flex;
-      flex-wrap: wrap;
-      list-style-type: none;
-      span {
-        padding: 0.25rem 0;
-      }
-      li {
-        margin: 0.15rem;
-        padding: 0.25rem;
-        font-size: 0.6rem;
-        color: ${({ theme }) => theme.secondaryAccent};
-        background: ${({ theme }) => theme.primaryDark};
-        border: 1px solid black;
-        border-radius: 5px;
-      }
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    span {
+      padding: 0.25rem 0;
+    }
+    li {
+      margin: 0.15rem;
+      padding: 0.25rem;
+      font-size: 0.6rem;
+      color: ${({ theme }) => theme.secondaryAccent};
+      background: ${({ theme }) => theme.primaryDark};
+      border: 1px solid black;
+      border-radius: 5px;
     }
   }
 
