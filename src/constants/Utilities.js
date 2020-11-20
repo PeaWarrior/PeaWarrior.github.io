@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiGit, SiGithub, SiPostman } from "react-icons/si";
+import { SiGit, SiGithub, SiPostman, SiHeroku } from "react-icons/si";
 
 export const Utilities = [
   {
@@ -17,4 +17,9 @@ export const Utilities = [
     name: 'Postman',
     icon: <SiPostman fill='#FF6C37' title='Postman' />,
   },
+  {
+    id: 4,
+    name: 'Heroku',
+    icon: <SiHeroku fill='#430098' title='Heroku' />
+  }
 ];

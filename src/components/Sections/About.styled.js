@@ -7,6 +7,8 @@ export const StyledImage = styled(Img)`
 `
 
 export const StyledAboutSection = styled.section`
+  background: ${({ theme }) => theme.secondaryLight};
+  
   div {
     width: 100%;
     height: auto;
@@ -26,7 +28,11 @@ export const StyledAboutSection = styled.section`
   }
 
   a {
-    color: ${({ theme }) => theme.primaryAccent }
+    color: ${({ theme }) => theme.primaryAccent};
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme.secondaryAccent};
   }
 
   p {

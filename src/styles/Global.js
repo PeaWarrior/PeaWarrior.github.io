@@ -33,6 +33,10 @@ export const GlobalStyles = createGlobalStyle`
         display: flex;
         align-items: center;
 
+        div {
+            width: 100%;
+        }
+
         h4 {
             margin: 2.5rem 0;
             width: 100%;
@@ -49,7 +53,7 @@ export const GlobalStyles = createGlobalStyle`
                 width: 100%;
                 margin-right: 5px;
                 margin-left: -100%;
-                border-top: 1px solid black;
+                border-top: 2px solid ${({ theme }) => theme.secondaryAccent};
             }
 
             &:after {
@@ -60,7 +64,7 @@ export const GlobalStyles = createGlobalStyle`
                 width: 100%;
                 margin-right: -100%;
                 margin-left: 5px;
-                border-top: 1px solid black;
+                border-top: 2px solid ${({ theme }) => theme.secondaryAccent};
             }
         }
     }

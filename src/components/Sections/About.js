@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 
 import { StyledAboutSection, StyledImage } from "./About.styled"
 

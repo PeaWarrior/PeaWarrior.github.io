@@ -3,7 +3,6 @@ import styled from "styled-components"
 const StyledSkillsSection = styled.section`
   min-height: 100vh;
   padding-top: 4.25rem;
-  background: ${({ theme }) => theme.secondaryLight };
 
   div {
     width: 100%;
@@ -16,7 +15,7 @@ const StyledSkillsSection = styled.section`
       margin-top: 0;
       font-size: 1.5rem;
       color: ${({ theme }) => theme.primaryDark };
-      border-bottom: 1px solid ${({ theme }) => theme.primaryDark };
+      border-bottom: 1px solid ${({ theme }) => theme.primaryDark};
     }
     
     div {

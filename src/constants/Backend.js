@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiRails, SiNodeDotJs, SiGraphql, SiHeroku } from 'react-icons/si';
+import { SiRails, SiNodeDotJs, SiGraphql } from 'react-icons/si';
 
 export const Backend = [
   {
@@ -17,9 +17,4 @@ export const Backend = [
     name: 'GraphQL',
     icon: <SiGraphql fill='#E10098' title='GraphQL' />,
   },
-  {
-    id: 4,
-    name: 'Heroku',
-    icon: <SiHeroku fill='#430098' title='Heroku' />
-  }
 ];

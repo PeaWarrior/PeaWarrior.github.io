@@ -11,8 +11,8 @@ export const Links = [
   },
   {
     id: 4,
-    text: 'Projects',
-    url: '/#projects',
+    text: 'portfolio',
+    url: '/#portfolio',
   },
   {
     id: 5,

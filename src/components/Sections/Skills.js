@@ -24,16 +24,16 @@ const Skills = () => {
           {renderData(Languages)}
         </div>
         <div>
-          <h3>Frontend</h3>
-          {renderData(Frontend)}
-        </div>
-        <div>
           <h3>Backend</h3>
           {renderData(Backend)}
         </div>
         <div>
           <h3>Database</h3>
           {renderData(Database)}
+        </div>
+        <div>
+          <h3>Frontend</h3>
+          {renderData(Frontend)}
         </div>
         <div>
           <h3>Utilities</h3>
