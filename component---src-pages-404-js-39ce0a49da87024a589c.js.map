@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/404.js"],"names":["error"],"mappings":"2FAAA,gCAUeA,UARD,WACZ,OACE,6BACE","file":"component---src-pages-404-js-39ce0a49da87024a589c.js","sourcesContent":["import React from \"react\"\n\nconst error = () => {\n  return (\n    <div>\n      <h1>404</h1>\n    </div>\n  )\n}\n\nexport default error\n"],"sourceRoot":""}
