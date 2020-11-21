@@ -1,8 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
 const path = require(`path`);
 
 module.exports = {
@@ -13,6 +8,10 @@ module.exports = {
     siteUrl: "https://jacksonchen.dev", // No trailing slash allowed!
     image: "/landing.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@jacksonchen171",
+    githubUsername: "peawarrior",
+    linkedinUsername: "jacksonchen171",
+    mediumUsername: "@jacksonchen171",
+    email: "jacksonchen171@gmail.com",
   },
   plugins: [
     `gatsby-plugin-styled-components`,

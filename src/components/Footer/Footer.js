@@ -7,6 +7,7 @@ import {
   AiFillLinkedin,
   AiFillMediumSquare,
   AiFillTwitterCircle,
+  AiOutlineMail
 } from 'react-icons/ai';
 
 const Footer = () => {
@@ -15,19 +16,27 @@ const Footer = () => {
       site {
         siteMetadata {
           twitterUsername
+          linkedinUsername
+          mediumUsername
+          githubUsername
+          email
         }
       }
     }
   `);
 
-  const {site: { siteMetadata: { twitterUsername } }} = data;
+  const {site: { siteMetadata: { twitterUsername, githubUsername, linkedinUsername, mediumUsername, email } }} = data;
 
   return (
     <StyledFooter>
-      <a href={`https://twitter.com/${twitterUsername}`}><AiFillTwitterCircle /></a>
-      <a href={`https://linkedin.com/in/${twitterUsername}`}><AiFillLinkedin /></a>
-      <AiFillGithub />
-      <AiFillMediumSquare />
+      <div>
+        <a href={`mailto:${email}`}><AiOutlineMail /></a>
+        <a href={`https://github.com/${githubUsername}`}><AiFillGithub /></a>
+        <a href={`https://linkedin.com/in/${linkedinUsername}`}><AiFillLinkedin /></a>
+        <a href={`https://twitter.com/${twitterUsername}`}><AiFillTwitterCircle /></a>
+        <a href={`https://medium.com/${mediumUsername}`}><AiFillMediumSquare /></a>
+      </div>
+      <p>Copyright © Jackson Chen 2020</p>
     </StyledFooter>
   )
 };
