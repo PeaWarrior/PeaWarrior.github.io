@@ -1,11 +1,16 @@
-import React from "react"
+import React from 'react';
+import { GlobalStyles } from '../styles/Global';
+import { Layout } from '../components';
+import StyledPageNotFoundSection from '../components/Sections/PageNotFound';
 
 const error = () => {
   return (
-    <div>
-      <h1>404</h1>
-    </div>
+    <Layout>
+      <GlobalStyles />
+      <StyledPageNotFoundSection />
+      
+    </Layout>
   )
 }
 
-export default error
+export default error;

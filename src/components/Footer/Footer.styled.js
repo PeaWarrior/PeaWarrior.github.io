@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
-  padding: 2rem 6.25%;
-  width: 100%;
+  padding: 1rem 6.25%;
+  width: 100vw;
   height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  background: ${({ theme }) => theme.primaryLight};
+  border-top: 1px solid ${({ theme }) => theme.primaryDark};
+  z-index: 5;
 
   a {
     color: ${({ theme }) => theme.primaryAccent };
