@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-const path = require(`path`)
+const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
@@ -22,6 +22,21 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `JacksonChen`,
+        short_name: `JacksonChen`,
+        description: `The application does cool things and makes your life better.`,
+        lang: `en`,
+        display: `standalone`,
+        icon: `src/images/logo.png`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#fff`,
+      },
+    },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

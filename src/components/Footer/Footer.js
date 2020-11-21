@@ -1,39 +1,35 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
+import StyledFooter from './Footer.styled';
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillMediumSquare,
   AiFillTwitterCircle,
-} from "react-icons/ai"
-// import { theme } from '../../styles/theme';
-
-const StyledFooter = styled.footer`
-  padding: 0 6.25%;
-  width: 100%;
-  height: 4.25rem;
-  position: relative;
-  /* bottom: 0; */
-  /* left: 0; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 2rem;
-  color: ${({ theme }) => theme.primaryAccent};
-  background: #fbfbfb;
-  z-index: 1;
-`
+} from 'react-icons/ai';
 
 const Footer = () => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          twitterUsername
+        }
+      }
+    }
+  `);
+
+  const {site: { siteMetadata: { twitterUsername } }} = data;
+
   return (
     <StyledFooter>
+      <a href={`https://twitter.com/${twitterUsername}`}><AiFillTwitterCircle /></a>
+      <a href={`https://linkedin.com/in/${twitterUsername}`}><AiFillLinkedin /></a>
       <AiFillGithub />
-      <AiFillLinkedin />
       <AiFillMediumSquare />
-      <AiFillTwitterCircle />
     </StyledFooter>
   )
-}
+};
 
-export default Footer
+export default Footer;
