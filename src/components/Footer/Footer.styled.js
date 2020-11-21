@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
-  padding: 0 6.25%;
+  padding: 2rem 6.25%;
   width: 100%;
-  height: 4.25rem;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,16 +12,22 @@ const StyledFooter = styled.footer`
   background: ${({ theme }) => theme.primaryLight};
 
   a {
-    padding: 0.5rem;
     color: ${({ theme }) => theme.primaryAccent };
-
+    text-decoration: none;
+    
     &:hover {
       color: ${({ theme }) => theme.secondaryAccent };
     }
   }
+  
+  .links {
+    a {
+      padding: 0.7rem;
+    }
+  }
 
   p {
-    margin: 0 0 1rem 0;
+    margin: 0;
     font-size: 1rem;
     font-weight: 200;
   }

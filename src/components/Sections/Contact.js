@@ -1,14 +1,28 @@
-import React from "react"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import StyledContactSection from "./Contact.styled"
+import StyledContactSection from './Contact.styled';
 
 const Contact = () => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          email
+        }
+      }
+    }
+  `);
+
+  const {site: { siteMetadata: { email } }} = data;
+
   return (
-    <StyledContactSection id="contact">
-      <h4>LET'S TALK</h4>
-      <p>
-        I am always open to new opportunities. Have an awesome idea? Reach out to me!
-      </p>
+    <StyledContactSection id='contact'>
+      <h4>CONTACT</h4>
+      <h5>
+        Have a question or want to work together?
+      </h5>
+      <a href={`mailto:${email}`} aria-label='email'>Let's Talk</a>
     </StyledContactSection>
   )
 }

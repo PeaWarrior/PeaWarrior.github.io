@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import StyledFooter from './Footer.styled';
 import {
@@ -29,14 +30,14 @@ const Footer = () => {
 
   return (
     <StyledFooter>
-      <div>
-        <a href={`mailto:${email}`}><AiOutlineMail /></a>
-        <a href={`https://github.com/${githubUsername}`}><AiFillGithub /></a>
-        <a href={`https://linkedin.com/in/${linkedinUsername}`}><AiFillLinkedin /></a>
-        <a href={`https://twitter.com/${twitterUsername}`}><AiFillTwitterCircle /></a>
-        <a href={`https://medium.com/${mediumUsername}`}><AiFillMediumSquare /></a>
+      <div className='links'>
+        <a href={`mailto:${email}`} aria-label='email'><AiOutlineMail /></a>
+        <a href={`https://github.com/${githubUsername}`} aria-label='github'><AiFillGithub /></a>
+        <a href={`https://linkedin.com/in/${linkedinUsername}`} aria-label='linkedin'><AiFillLinkedin /></a>
+        <a href={`https://twitter.com/${twitterUsername}`} aria-label='twitter'><AiFillTwitterCircle /></a>
+        <a href={`https://medium.com/${mediumUsername}`} aria-label='medium'><AiFillMediumSquare /></a>
       </div>
-      <p>Copyright © Jackson Chen 2020</p>
+      <p><AnchorLink to='/#hero' aria-label='hero'>Jackson Chen</AnchorLink> © 2020</p>
     </StyledFooter>
   )
 };
