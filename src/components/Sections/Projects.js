@@ -33,11 +33,11 @@ const Projects = () => {
   }
 `);
 
-  const renderProjects = projects.map((project, index) => <ProjectCard key={project.node.frontmatter.title} {...project.node} />)
+  const renderProjects = projects.map((project) => <ProjectCard key={project.node.frontmatter.title} {...project.node} />)
 
   return (
     <StyledProjectsSection id="projects">
-      <h4>PROJECTS</h4>
+      <h2>PROJECTS</h2>
       <div>
         {renderProjects}
       </div>

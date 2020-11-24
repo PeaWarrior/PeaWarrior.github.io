@@ -31,7 +31,7 @@ const StyledHeroSection = styled.section`
     transition: ${"transform 1.5s, opacity 2s ease-in-out"};
   }
 
-  h2 {
+  h3 {
     max-width: 650px;
     margin: 1rem 0;
     font-size: clamp(2rem, 3vw, 3rem);
@@ -42,7 +42,7 @@ const StyledHeroSection = styled.section`
     transition: ${"transform 1.5s, opacity 2s ease-in-out"};
   }
 
-  h3 {
+  h4 {
     margin: 1rem 0;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: ${({ theme }) => theme.secondaryDark};

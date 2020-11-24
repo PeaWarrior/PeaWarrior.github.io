@@ -21,7 +21,7 @@ const BlogCard = ({ name, title, createdAt, excerpt, uniqueSlug, tags }) => {
         </div>
       </div>
       <p>{excerpt}</p>
-      <a href={blogSite + uniqueSlug}>Continue reading...</a>
+      <a href={blogSite + uniqueSlug} aria-label={`link to ${title}`}>Continue reading...</a>
       <ul>
         <span>Tags:</span>
         {renderTags}

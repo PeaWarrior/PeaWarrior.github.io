@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <StyledAboutSection id="about">
-      <h4>ABOUT</h4>
+      <h2>ABOUT</h2>
       <div>
         <StyledImage fluid={data.file.childImageSharp.fluid} />
         <div>

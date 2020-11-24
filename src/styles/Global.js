@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
             width: 100%;
         }
 
-        h4 {
+        h2 {
             margin: 2.5rem 0;
             width: 100%;
             color: ${({ theme }) => theme.primaryAccent};

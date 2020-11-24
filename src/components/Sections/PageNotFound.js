@@ -7,7 +7,7 @@ const PageNotFoundSection = () => {
   return (
     <StyledPageNotFoundSection>
       <div className='error'>
-        <h4>404</h4>
+        <h2>404</h2>
         <p>The page you're looking for does not exist.</p>
       </div>
       <Link to='/' aria-label='home'>Go Home</Link>

@@ -28,9 +28,9 @@ const Hero = () => {
     return () => clearTimeout(timer)
   }, [])
 
-  const first = <h3>Hi, my name is</h3>;
+  const first = <h4>Hi, my name is</h4>;
   const second = <h1>Jackson Chen.</h1>;
-  const third = <h2>Just your friendly neighborhood programmer.</h2>;
+  const third = <h3>Just your friendly neighborhood programmer.</h3>;
   const fourth = (
     <p>
       I'm a software engineer based in Brooklyn, NY specialized in building full

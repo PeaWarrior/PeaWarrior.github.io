@@ -6,7 +6,7 @@ const StyledPageNotFoundSection = styled.section`
   background: ${({ theme }) => theme.secondaryLight};
 
   .error {
-    h4 {
+    h2 {
       font-size: clamp(5rem, 10vw, 10rem);
     }
 

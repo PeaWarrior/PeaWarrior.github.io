@@ -49,7 +49,7 @@ const Blog = () => {
 
   return (
   <StyledBlogSection id='blog'>
-    <h4>BLOG</h4>
+    <h2>BLOG</h2>
     <div>
       {renderBlogs}
     </div>

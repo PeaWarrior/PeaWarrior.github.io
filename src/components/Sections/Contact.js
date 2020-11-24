@@ -18,7 +18,7 @@ const Contact = () => {
 
   return (
     <StyledContactSection id='contact'>
-      <h4>CONTACT</h4>
+      <h2>CONTACT</h2>
       <h5>
         Have a question or want to work together?
       </h5>

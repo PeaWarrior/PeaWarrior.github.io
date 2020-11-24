@@ -19,9 +19,9 @@ const ProjectCard = ({ frontmatter: { title, date, github, tech, demo, live, cov
             {renderTech}
           </ul>
           <div className='links'>
-            <a href={github} aria-label='github'><SiGithub /></a>
-            {demo ? <a href={demo} aria-label='demo'><SiYoutube /></a> : null}
-            {live ? <a href={live} aria-label='live'><HiOutlineExternalLink /></a> : null}
+            <a href={github} aria-label={`github to ${title}`}><SiGithub /></a>
+            {demo ? <a href={demo} aria-label={`youtube demo to ${title}`}><SiYoutube /></a> : null}
+            {live ? <a href={live} aria-label={`live site to ${title}`}><HiOutlineExternalLink /></a> : null}
           </div>
         </div>
       </div>
