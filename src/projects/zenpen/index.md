@@ -9,4 +9,4 @@ tech:
 cover: './cover.png'
 ---
 
-Stock portfolio manager equipped with real-time trade data, news and historical stock data.
+Mental health web app designed to help users reduce stress through self-expression and mindfulness meditation.
