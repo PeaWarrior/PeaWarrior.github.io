@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiGatsby, SiReact, SiRedux, SiBootstrap, SiStyledComponents } from 'react-icons/si';
+import { SiGatsby, SiReact, SiRedux, SiBootstrap, SiStyledComponents, SiMaterialUi } from 'react-icons/si';
 
 export const Frontend = [
   {
@@ -24,6 +24,11 @@ export const Frontend = [
   },
   {
     id: 5,
+    name: 'Material-UI',
+    icon: <SiMaterialUi fill='#0081CB' title='Material-UI' />,
+  },
+  {
+    id: 6,
     name: 'Bootstrap',
     icon: <SiBootstrap fill='#563D7C' title='Bootstrap' />,
   },
